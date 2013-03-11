@@ -1,9 +1,7 @@
 easycrypto
 ==========
 
-Bare-bones Nodejs crypto module abstraction.
-
-Implements the `aes-256-cbc` algorithm providing a very simple and unsophisticated encryption API.
+Bare-bones Nodejs crypto module abstraction providing a very simple and unsophisticated encryption API.
 
 Installation
 ---------------
@@ -16,6 +14,14 @@ Use
     var encrypted = easycrypto.encrypt('hello world', 'some random password');
 
     var decrypt = easycrypto.decrypt(encrypted, 'some random password');
+
+Algorithms
+---------------
+Defaults to `aes-256-cbc` however will support other OpenSSL algorithms your specific platform supports (per Nodes crypto documentation).
+
+    var easycrypto = require('easycrypto').getInstance({
+      algorithm: 'aes128'
+    });
 
 Testing
 ---------------
