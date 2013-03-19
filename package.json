@@ -1,8 +1,8 @@
 {
   "author": "Brian Carr <bcarr14@gmail.com>",
   "name": "easycrypto",
-  "description": "Bare-bones crypto module abstraction for Nodejs.",
-  "version": "0.1.0",
+  "description": "Bare-bones Nodejs crypto module abstraction providing a very simple and unsophisticated encryption API.",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "http://github.com/mrmarbles/easycrypto.git"
